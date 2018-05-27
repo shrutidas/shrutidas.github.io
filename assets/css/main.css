@@ -1990,16 +1990,14 @@
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
-		color: #fff;
-		text-align: center;
+		background-image: url("https://78.media.tumblr.com/fc01271b6fccc41de99d998666dee25f/tumblr_p9efa0VqLD1sec1c2o1_1280.jpg");
+		background-image-width: 0.5em;
+		background-image-height: 0.5em;
 		border-radius: 0.5em;
-		text-decoration: none;
 		padding: 0.65em 3em 0.65em 3em;
 		border: 0;
 		cursor: pointer;
 		outline: 0;
-		font-weight: 300;
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
