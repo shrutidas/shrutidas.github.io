@@ -1,9 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("font-awesome.min.css");
-@font-face { font-family: Earth Quest; src: url('Earth Quest.ttf'); }
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Pathway+Gothic+One');
 
-@font-face { font-family: Georgina; src: url('Georgina.ttf'); }
-@font-face { font-family: Georgina; font-weight: bold; src: url('Georgina.ttf');}
+@font-face { 
+	src: url("../fonts/EarthQuest.ttf"); 
+	font-family: EarthQuest; 
+}
+
+@font-face { 
+	src: url("../fonts/Georgina.ttf"); 
+	font-family: Georgina;
+}
+
+@font-face { 
+	src: url("../fonts/Please write me a song.ttf"); 
+	font-family: song;
+}
+
 
 
 /*
@@ -1560,7 +1573,7 @@
 		color: #5b5b5b;
 		font-size: 15pt;
 		line-height: 1.85em;
-		font-family: 'Please write me a song';
+		font-family: song;
 		font-weight: 300;
 	}
 
@@ -1583,7 +1596,7 @@
 	}
 
 	h1 {
-		font-family: 'Earth Quest';
+		font-family: EarthQuest;
 		font-weight: 300;
 		size: 1000px;
 		color: #483949;
@@ -1598,7 +1611,7 @@
 	}
 
 	h3, h4, h5, h6 {
-		font-family: 'Georgina';
+		font-family: Georgina;
 		font-weight: 400;
 		color: #483949;
 		line-height: 1.25em;
