@@ -2,30 +2,74 @@
 @import url("font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Pathway+Gothic+One');
 
-@font-face { 
-	src: url("../fonts/EarthQuest.ttf"); 
-	font-family: EarthQuest; 
-}
+/* FONTS */
 
-@font-face { 
-	src: url("../fonts/Georgina.ttf"); 
-	font-family: Georgina;
-}
+	@font-face { 
+		src: url("../fonts/EarthQuest.ttf"); 
+		font-family: EarthQuest; 
+	}
 
-@font-face { 
-	src: url("../fonts/Please write me a song.ttf"); 
-	font-family: song;
-}
+	@font-face { 
+		src: url("../fonts/Rahayu.ttf"); 
+		font-family: rahayu; 
+	}
 
+	@font-face { 
+		src: url("../fonts/Georgina.ttf"); 
+		font-family: Georgina;
+	}
 
+	@font-face { 
+		src: url("../fonts/Luna.ttf"); 
+		font-family: Luna;
+	}
 
-/*
-	Helios by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+	@font-face { 
+		src: url("../fonts/lekton.otf"); 
+		font-family: lekton;
+	}
 
-/* Reset */
+	@font-face { 
+		src: url("../fonts/aliens.ttf"); 
+		font-family: aliens;
+	}
+
+	@font-face { 
+		src: url("../fonts/cafe.ttf"); 
+		font-family: cafe;
+	}
+
+	@font-face { 
+		src: url("../fonts/No Added Sugar.otf"); 
+		font-family: sugar;
+	}
+
+	@font-face { 
+		src: url("../fonts/aliens.ttf"); 
+		font-family: alien;
+	}
+
+	@font-face { 
+		src: url("../fonts/TIMESS.ttf"); 
+		font-family: timess;
+	}
+
+	@font-face { 
+		src: url("../fonts/kandira.ttf"); 
+		font-family: kandira;
+	}
+
+	@font-face { 
+		src: url("../fonts/lane.ttf"); 
+		font-family: lane;
+	}
+
+	@font-face { 
+		src: url("../fonts/bebas.ttf"); 
+		font-family: bebas;
+	}
+
+/* RESET */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -233,7 +277,7 @@
 
 	}
 
-/* Grid */
+/* GRID */
 
 	.row {
 		border-bottom: solid 1px transparent;
@@ -1566,14 +1610,14 @@
 
 	}
 
-/* Basic */
+/* BASIC */
 
 	body {
 		background: #f0f4f4;
 		color: #5b5b5b;
 		font-size: 15pt;
 		line-height: 1.85em;
-		font-family: song;
+		font-family: lane;
 		font-weight: 300;
 	}
 
@@ -1591,28 +1635,48 @@
 	input, textarea, select {
 		font-size: 15pt;
 		line-height: 1.85em;
-		font-family: 'Luna';
+		font-family: Luna;
 		font-weight: 300;
 	}
 
 	h1 {
-		font-family: EarthQuest;
+		font-family: rahayu;
 		font-weight: 300;
-		size: 1000px;
+		font-size: 5000pt;
 		color: #483949;
+		letter-spacing: -5px;
+		line-height: 5.25em;
+		text-shadow: 2px 1px #000;
+	}
+
+	h5 {
+		font-family: EarthQuest;
+		font-size: 50px;
+		color: #000;
 		line-height: 1.25em;
+		display: inline-block;
 	}
 
 	h2 {
-		font-family: 'Luna';
+		font-family: bebas;
 		font-weight: 400;
 		color: #483949;
 		line-height: 1.25em;
 	}
 
-	h3, h4, h5, h6 {
-		font-family: Georgina;
-		font-weight: 400;
+	h3 {
+		font-family: cafe;
+		color: #483949;
+		line-height: 1.25em;
+		display: inline-block;
+
+	}
+
+	h4, h6 {
+		font-family: lekton;
+		letter-spacing: 1px;
+		font-weight: 900;
+		font-style: bold;
 		color: #483949;
 		line-height: 1.25em;
 	}
@@ -1624,7 +1688,7 @@
 	}
 
 	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
-		font-weight: 600;
+		font-weight: 1000;
 	}
 
 	h2 {
@@ -1660,7 +1724,6 @@
 	}
 
 		a:hover {
-			color: #ef8376;
 			border-bottom-color: transparent;
 		}
 
@@ -1698,8 +1761,8 @@
 		position: relative;
 		display: block;
 		border: 0;
-		top: 4.5em;
-		margin-bottom: 9em;
+		top: 1.5em;
+		margin-bottom: 4.5em;
 		height: 6px;
 		border-top: solid 1px rgba(128, 128, 128, 0.2);
 		border-bottom: solid 1px rgba(128, 128, 128, 0.2);
@@ -1762,7 +1825,7 @@
 		margin: 2.5em 0 0 0;
 	}
 
-/* Image */
+/* IMAGE */
 
 	.image {
 		position: relative;
@@ -1891,7 +1954,11 @@
 			}
 
 				ul.icons li a:hover {
-					color: #ef8376;
+					-webkit-filter: blur(0.5px);
+					-moz-filter: blur(0.5px);
+					-o-filter: blur(0.5px);
+					-ms-filter: blur(0.5px);
+					filter: blur(0.5px);
 				}
 
 	ol.default {
@@ -1903,7 +1970,7 @@
 			padding-left: 0.25em;
 		}
 
-/* Form */
+/* FORM */
 
 	form label {
 		display: block;
@@ -1975,7 +2042,7 @@
 		border: 0;
 	}
 
-/* Table */
+/* TABLE */
 
 	table {
 		width: 100%;
@@ -2015,7 +2082,7 @@
 				border-top: solid 2px #e5e5e5;
 			}
 
-/* Button */
+/* BUTTON */
 
 	input[type="button"],
 	input[type="submit"],
@@ -2026,12 +2093,13 @@
 		display: inline-block;
 		background-image: url("https://78.media.tumblr.com/fc01271b6fccc41de99d998666dee25f/tumblr_p9efa0VqLD1sec1c2o1_1280.jpg");
 		background-size: 105%;
+		border: 2px;
+		border-color: #fff;
 		background-position: center;
 		border-radius: 0.5em;
 		padding: 0.65em 3em 0.65em 3em;
-		border: 0;
 		cursor: pointer;
-		outline: 0;
+		outline: 1px;
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -2048,7 +2116,6 @@
 			-o-filter: blur(2px);
 			-ms-filter: blur(2px);
 			filter: blur(1px);
-}
 		}
 
 		input[type="button"].alt,
@@ -2067,7 +2134,7 @@
 				background: #3B353C;
 			}
 
-/* Post */
+/* POST */
 
 	.post.stub {
 		text-align: center;
@@ -2077,7 +2144,7 @@
 			margin: 0;
 		}
 
-/* Icons */
+/* ICONS */
 
 	.icon {
 		text-decoration: none;
@@ -2116,23 +2183,25 @@
 				margin: 0 0 2em 0;
 			}
 
-/* Wrapper */
+/* WRAPPER */
 
 	.wrapper {
-		background: #fff;
+		background: #305649;;
 		margin: 0 0 2em 0;
 		padding: 6em 0 6em 0;
+		color: #fff;
 	}
 
 		.wrapper.style2 {
 			padding-top: 0;
+			background: #fff;
 		}
 
-/* Header */
+/* HEADER */
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2016/11/philadelphia-wallpaper-1.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2155,6 +2224,7 @@
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
+			padding-bottom: 400px;
 		}
 
 		#header header {
@@ -2168,7 +2238,7 @@
 
 		#header h1 {
 			color: #fff;
-			font-size: 3em;
+			font-size: 100px;
 			line-height: 1em;
 		}
 
@@ -2179,11 +2249,15 @@
 		#header .button {
 			display: inline-block;
 			border-radius: 100%;
+			border: 10px;
+			border-color: #fff;
+			border-spacing: 2px;
 			width: 10.5em;
 			height: 10.5em;
 			line-height: 4.5em;
 			text-align: center;
-			padding: 0;
+			padding: 100px;
+			box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
 		}
 
 		#header hr {
@@ -2207,7 +2281,7 @@
 	}
 
 		body.homepage #header h1 {
-			font-size: 4em;
+			font-size: 8em;
 		}
 
 		body.homepage #header:after {
@@ -2216,7 +2290,7 @@
 			display: block;
 			position: absolute;
 			left: 0;
-			top: 0;
+			top: -10px;
 			width: 100%;
 			height: 100%;
 			opacity: 0;
@@ -2234,7 +2308,7 @@
 		opacity: 1;
 	}
 
-/* Nav */
+/* NAVIGATION */
 
 	#nav {
 		position: fixed;
@@ -2244,9 +2318,13 @@
 		background: #000;
 		opacity: 0.9;
 		text-align: center;
-		padding: 1.5em 0 0.8em 0;
+		padding: 0.4em 0 0.4em 0;
 		z-index: 1;
 		overflow: hidden;
+		font-family: bebas;
+		font-size: 25px;
+		font-weight: 100;
+		letter-spacing: 2px;
 	}
 
 		#nav > ul {
@@ -2362,20 +2440,20 @@
 				border-right: solid 0.75em rgba(64, 64, 64, 0);
 			}
 
-/* Banner */
+/* ABOUT SECTION */
 
-	#banner {
+	#about {
 		background: #fff;
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
 		margin-bottom: 0;
 	}
 
-		#banner header > p {
+		#about header > p {
 			margin-bottom: 0;
 		}
 
-/* Content */
+/* CONTENT */
 
 	#content > hr {
 		top: 3em;
@@ -2401,7 +2479,7 @@
 		margin-bottom: 0;
 	}
 
-/* Main */
+/* MAIN */
 
 	#main {
 		margin-bottom: 0;
@@ -2411,13 +2489,14 @@
 			padding-top: 2em;
 		}
 
-/* Footer */
+/* FOOTER */
 
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
-		background: #2b252c;
+		padding: 4em 0 2em 0;
+		background: #000;
+		opacity: 0.95;
 		color: #fff;
 	}
 
@@ -2441,14 +2520,16 @@
 
 			#footer .contact p {
 				text-align: center;
-				margin: 0 0 3em 0;
+				margin: 0 0 0em 0;
 			}
 
 		#footer .copyright {
 			text-align: center;
-			color: rgba(128, 128, 128, 0.75);
-			font-size: 0.8em;
+			color: rgba(214, 202, 202, 0.75);
+			font-size: 15px;
 			cursor: default;
+			font-family: lekton;
+			letter-spacing: 0.2px;
 		}
 
 			#footer .copyright a {
@@ -2456,10 +2537,14 @@
 			}
 
 				#footer .copyright a:hover {
-					color: rgba(212, 212, 212, 0.85);
+					-webkit-filter: blur(2px);
+					-moz-filter: blur(2px);
+					-o-filter: blur(2px);
+					-ms-filter: blur(2px);
+					filter: blur(1px);
 				}
 
-/* Carousel */
+/* CAROUSEL */
 
 	.carousel {
 		position: relative;
@@ -2615,7 +2700,7 @@
 				line-height: 1.5em;
 			}
 
-		/* Wrapper */
+		/* WRAPPER */
 
 			.wrapper {
 				padding-left: 2em;
@@ -2640,7 +2725,7 @@
 				padding-right: 2em;
 			}
 
-		/* Footer */
+		/* FOOTER */
 
 			#footer {
 				padding-left: 2em;
@@ -2671,7 +2756,7 @@
 				text-align: center;
 			}
 
-		/* Footer */
+		/* FOOTER */
 
 			#footer {
 				padding: 4em 2em 4em 2em;
@@ -2714,7 +2799,7 @@
 			}
 
 			h3 {
-				font-size: 1.25em;
+				font-size: 4.25em;
 			}
 
 			hr {
@@ -2794,7 +2879,7 @@
 					width: 2.25em;
 				}
 
-		/* Button */
+		/* BUTTON */
 
 			input[type="button"],
 			input[type="submit"],
@@ -2805,6 +2890,7 @@
 				padding: 0;
 				line-height: 3em;
 				width: 100%;
+				box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
 			}
 
 		/* Off-Canvas Navigation */
@@ -2981,13 +3067,13 @@
 				transform: translateY(0);
 			}
 
-		/* Wrapper */
+		/* WRAPPER */
 
 			.wrapper {
 				padding: 3em 1em 3em 1em;
 			}
 
-		/* Header */
+		/* HEADER */
 
 			#header {
 				background-attachment: scroll;
