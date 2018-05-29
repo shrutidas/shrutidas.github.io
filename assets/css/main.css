@@ -10,6 +10,11 @@
 	}
 
 	@font-face { 
+		src: url("../fonts/CaviarDreams.ttf"); 
+		font-family: caviar; 
+	}
+
+	@font-face { 
 		src: url("../fonts/Rahayu.ttf"); 
 		font-family: rahayu; 
 	}
@@ -1672,8 +1677,17 @@
 
 	}
 
-	h4, h6 {
-		font-family: lekton;
+	h4 {
+		font-family: caviar;
+		letter-spacing: 1px;
+		font-weight: 900;
+		font-style: bold;
+		color: #000;
+		line-height: 1.25em;
+	}
+
+	h6 {
+		font-family: caviar;
 		letter-spacing: 1px;
 		font-weight: 900;
 		font-style: bold;
@@ -2187,8 +2201,8 @@
 
 	.wrapper {
 		background: #305649;;
-		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+		margin: 0 0 0em 0;
+		padding: 2em 0 3em 0;
 		color: #fff;
 	}
 
@@ -2445,12 +2459,15 @@
 	#about {
 		background: #fff;
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
+		display: inline-center;
+		padding: 3.5em 0 4.5em 0;
 		margin-bottom: 0;
+		color: #000;
 	}
 
 		#about header > p {
 			margin-bottom: 0;
+			color: #000;
 		}
 
 /* CONTENT */
@@ -2551,6 +2568,7 @@
 		overflow: hidden;
 		padding: 2em 0 2em 0;
 		margin-bottom: 0;
+		background: #608277;
 	}
 
 		.carousel .forward, .carousel .backward {
@@ -3070,7 +3088,7 @@
 		/* WRAPPER */
 
 			.wrapper {
-				padding: 3em 1em 3em 1em;
+				padding: 1em 1em 1em 1em;
 			}
 
 		/* HEADER */
