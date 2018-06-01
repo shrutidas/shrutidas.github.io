@@ -1,78 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
-@import url("font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Pathway+Gothic+One');
-
 /* FONTS */
 
-	@font-face { 
-		src: url("../fonts/EarthQuest.ttf"); 
-		font-family: EarthQuest; 
-	}
+	@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+	@import url("font-awesome.min.css");
+	@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Pathway+Gothic+One');
 
-	@font-face { 
-		src: url("../fonts/CaviarDreams.ttf"); 
-		font-family: caviar; 
-	}
-
-	@font-face { 
-		src: url("../fonts/Rahayu.ttf"); 
-		font-family: rahayu; 
-	}
-
-	@font-face { 
-		src: url("../fonts/Georgina.ttf"); 
-		font-family: Georgina;
-	}
-
-	@font-face { 
-		src: url("../fonts/Luna.ttf"); 
-		font-family: Luna;
-	}
-
-	@font-face { 
-		src: url("../fonts/lekton.otf"); 
-		font-family: lekton;
-	}
-
-	@font-face { 
-		src: url("../fonts/aliens.ttf"); 
-		font-family: aliens;
-	}
-
-	@font-face { 
-		src: url("../fonts/cafe.ttf"); 
-		font-family: cafe;
-	}
-
-	@font-face { 
-		src: url("../fonts/No Added Sugar.otf"); 
-		font-family: sugar;
-	}
-
-	@font-face { 
-		src: url("../fonts/aliens.ttf"); 
-		font-family: alien;
-	}
-
-	@font-face { 
-		src: url("../fonts/TIMESS.ttf"); 
-		font-family: timess;
-	}
-
-	@font-face { 
-		src: url("../fonts/kandira.ttf"); 
-		font-family: kandira;
-	}
-
-	@font-face { 
-		src: url("../fonts/lane.ttf"); 
-		font-family: lane;
-	}
-
-	@font-face { 
-		src: url("../fonts/bebas.ttf"); 
-		font-family: bebas;
-	}
+	@font-face { src: url("../fonts/EarthQuest.ttf"); font-family: EarthQuest; }
+	@font-face { src: url("../fonts/CaviarDreams.ttf"); font-family: caviar; }
+	@font-face { src: url("../fonts/Rahayu.ttf"); font-family: rahayu; }
+	@font-face { src: url("../fonts/Georgina.ttf"); font-family: Georgina; }
+	@font-face { src: url("../fonts/Luna.ttf"); font-family: Luna; }
+	@font-face { src: url("../fonts/lekton.otf"); font-family: lekton; }
+	@font-face { src: url("../fonts/aliens.ttf"); font-family: aliens; }
+	@font-face { src: url("../fonts/cafe.ttf"); font-family: cafe; }
+	@font-face { src: url("../fonts/No Added Sugar.otf"); font-family: sugar; }
+	@font-face { src: url("../fonts/aliens.ttf"); font-family: alien; }
+	@font-face { src: url("../fonts/TIMESS.ttf"); font-family: timess; }
+	@font-face { src: url("../fonts/kandira.ttf"); font-family: kandira; }
+	@font-face { src: url("../fonts/lane.ttf"); font-family: lane; }
+	@font-face { src: url("../fonts/bebas.ttf"); font-family: bebas; }
 
 /* RESET */
 
@@ -115,7 +60,7 @@
 		-webkit-text-size-adjust: none;
 	}
 
-/* Box Model */
+/* BOX MODEL */
 
 	*, *:before, *:after {
 		-moz-box-sizing: border-box;
@@ -123,7 +68,7 @@
 		box-sizing: border-box;
 	}
 
-/* Containers */
+/* CONTAINERS */
 
 	.container {
 		margin-left: auto;
@@ -1729,7 +1674,7 @@
 
 	a {
 		color: inherit;
-		border-bottom: solid 1px rgba(128, 128, 128, 0.15);
+		border-bottom: solid 0px rgba(128, 128, 128, 0.15);
 		text-decoration: none;
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -1739,6 +1684,13 @@
 
 		a:hover {
 			border-bottom-color: transparent;
+			color: #000;
+			/*text-shadow: #956bcc 0 0 5px;*/
+			border-bottom: solid 1px rgba(192, 192, 192, 0.35);
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom  0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
 		}
 
 	sub {
@@ -1805,7 +1757,7 @@
 		font-size: 0.8em;
 	}
 
-/* Sections/Article */
+/* SECTIONS OR ARTICLES */
 
 	section, article {
 		margin-bottom: 3em;
@@ -1879,7 +1831,7 @@
 				width: auto;
 			}
 
-/* List */
+/* LIST */
 
 	ul.default {
 		list-style: disc;
@@ -2481,7 +2433,7 @@
 		margin-bottom: 0;
 	}
 
-/* Sidebar */
+/* SIDEBAR */
 
 	#sidebar > hr {
 		top: 3em;
@@ -2568,7 +2520,7 @@
 		overflow: hidden;
 		padding: 2em 0 2em 0;
 		margin-bottom: 0;
-		background: #608277;
+		background: #305649;
 	}
 
 		.carousel .forward, .carousel .backward {
@@ -2605,7 +2557,7 @@
 				position: absolute;
 				top: 50%;
 				margin: -1.5em 0 0 0;
-				background: url("images/arrow.svg") no-repeat center center;
+				background: url("IMAGES/arrow.svg") no-repeat center center;
 			}
 
 			.carousel .forward:hover:before, .carousel .backward:hover:before {
@@ -2679,18 +2631,18 @@
 				text-align: center;
 			}
 
-/* Wide */
+/* WIDE */
 
 	@media screen and (max-width: 1680px) {
 
-		/* Basic */
+		/* BASIC */
 
 			body, input, textarea, select {
 				font-size: 14pt;
 				line-height: 1.75em;
 			}
 
-		/* Carousel */
+		/* CAROUSEL */
 
 			.carousel {
 				padding: 1.5em 0 1.5em 0;
@@ -2707,7 +2659,7 @@
 
 	}
 
-/* Normal */
+/* NORMAL */
 
 	@media screen and (max-width: 1280px) {
 
@@ -2725,7 +2677,7 @@
 				padding-right: 2em;
 			}
 
-		/* Header */
+		/* HEADER */
 
 			#header {
 				background-attachment: scroll;
@@ -2736,9 +2688,9 @@
 					padding-right: 2em;
 				}
 
-		/* Banner */
+		/* ABOUT */
 
-			#banner {
+			#about {
 				padding-left: 2em;
 				padding-right: 2em;
 			}
@@ -2752,13 +2704,13 @@
 
 	}
 
-/* Narrow */
+/* NARROW */
 
-/* Narrower */
+/* NARROWER */
 
 	@media screen and (max-width: 840px) {
 
-		/* Basic */
+		/* BASIC */
 
 			body, input, textarea, select {
 				font-size: 13pt;
@@ -2780,7 +2732,7 @@
 				padding: 4em 2em 4em 2em;
 			}
 
-		/* Carousel */
+		/* CAROUSEL */
 
 			.carousel {
 				padding: 1.25em 0 1.25em 0;
@@ -2793,7 +2745,7 @@
 
 	}
 
-/* Mobile */
+/* MOBILE */
 
 	#navPanel, #titleBar {
 		display: none;
@@ -2825,7 +2777,7 @@
 				margin-bottom: 6em;
 			}
 
-		/* Section/Article */
+		/* SECTION OR ARTICLES */
 
 			section, article {
 				margin-bottom: 2em;
@@ -2843,7 +2795,7 @@
 				font-size: 1.25em;
 			}
 
-		/* Image */
+		/* IMAGE */
 
 			.image.featured {
 				margin: 0 0 2em 0;
@@ -2857,7 +2809,7 @@
 				margin: 0 0 1em 0;
 			}
 
-		/* List */
+		/* LIST */
 
 			form ul.actions {
 				margin-top: 0;
@@ -2911,7 +2863,7 @@
 				box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
 			}
 
-		/* Off-Canvas Navigation */
+		/* OFF-CANVAS NAVI */
 
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
@@ -2954,7 +2906,7 @@
 				}
 
 					#navButton .toggle:before {
-						font-family: FontAwesome;
+						font-family: bebas;
 						text-decoration: none;
 						font-style: normal;
 						font-weight: normal;
@@ -3011,7 +2963,7 @@
 					top: 0;
 					width: 100%;
 					height: 100%;
-					background: url("images/overlay.png");
+					background: url("IMAGES/overlay.png");
 					background-size: 128px 128px;
 				}
 
@@ -3131,38 +3083,38 @@
 					font-size: 2.5em;
 				}
 
-		/* Nav */
+		/* NAVIGATION */
 
 			#nav {
 				display: none;
 			}
 
-		/* Banner */
+		/* ABOUT */
 
-			#banner {
+			#about {
 				padding: 3em 2em 3em 2em;
 			}
 
-		/* Sidebar */
+		/* SIDEBAR */
 
 			#sidebar > hr:first-of-type {
 				display: block;
 			}
 
-		/* Main */
+		/* MAIN */
 
 			#main > header {
 				text-align: center;
 			}
 
-		/* Footer */
+		/* FOOTER */
 
 			#footer {
 				padding-left: 1em;
 				padding-right: 1em;
 			}
 
-		/* Carousel */
+		/* CAROUSEL */
 
 			.carousel {
 				padding: 0.5em 0 0.5em 0;
