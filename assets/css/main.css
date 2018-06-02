@@ -1612,6 +1612,7 @@
 		font-weight: 400;
 		color: #483949;
 		line-height: 1.25em;
+		letter-spacing:2px;
 	}
 
 	h3 {
@@ -1688,6 +1689,7 @@
 			color: #000;
 			/*text-shadow: #956bcc 0 0 5px;*/
 			border-bottom: solid 1px #948d8d;
+			padding: 0px 0px 3px 0px;
 			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom  0.35s ease-in-out;
 			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
 			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
@@ -1921,11 +1923,15 @@
 			}
 
 				ul.icons li a:hover {
+					/*
 					-webkit-filter: blur(0.5px);
 					-moz-filter: blur(0.5px);
 					-o-filter: blur(0.5px);
 					-ms-filter: blur(0.5px);
 					filter: blur(0.5px);
+					*/
+
+					border-bottom: solid 1px #fff;
 				}
 
 	ol.default {
@@ -2067,10 +2073,11 @@
 		padding: 0.65em 3em 0.65em 3em;
 		cursor: pointer;
 		outline: 1px;
-		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		/*
+		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, background-image 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, background-image 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, background-image 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, background-image 0.35s ease-in-out; */
 	}
 
 		input[type="button"]:hover,
@@ -2541,11 +2548,6 @@
 			}
 
 				#footer .copyright a:hover {
-					-webkit-filter: blur(2px);
-					-moz-filter: blur(2px);
-					-o-filter: blur(2px);
-					-ms-filter: blur(2px);
-					filter: blur(1px);
 				}
 
 /* CAROUSEL */
@@ -2555,6 +2557,7 @@
 		overflow: hidden;
 		padding: 2em 0 2em 0;
 		margin-bottom: 0;
+		margin-top: 0;
 		background-image: url(https://78.media.tumblr.com/226013296f378117bb506192f8982808/tumblr_inline_mkjkwp5xlN1qz4rgp.png);
 	}
 
@@ -2631,7 +2634,7 @@
 			white-space: nowrap;
 			position: relative;
 			-webkit-overflow-scrolling: touch;
-			padding: 0 2em 0 2em;
+			padding: 0 0.1em 0 0.5em;
 		}
 
 		.carousel article {
@@ -2788,7 +2791,7 @@
 
 	@media screen and (max-width: 736px) {
 
-		/* Basic */
+		/* BASIC */
 
 			html, body {
 				overflow-x: hidden;
