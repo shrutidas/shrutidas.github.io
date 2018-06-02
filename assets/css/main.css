@@ -2419,12 +2419,13 @@
 /* ABOUT SECTION */
 
 	#about {
-		background: #1e1f1f;
+		background: #000;
+		opacity: 0.95;
 		text-align: center;
 		display: inline-center;
 		padding: 3.5em 0 3em 0;
 		margin-bottom: 0;
-		color: #000;
+		color: #fff;
 	}
 
 		#about header > p {
@@ -2453,14 +2454,19 @@
 
 /* CONTENT */
 
-	#content > hr {
-		top: 3em;
-		margin-bottom: 6em;
+	#experience {
+		background: #305649;
+		padding: 1.5em 0 3em 0;
 	}
 
-	#content > section {
-		margin-bottom: 0;
-	}
+		#content > section {
+			margin-bottom: 0;
+		}
+
+		#content > hr {
+			top: 3em;
+			margin-bottom: 6em;
+		}
 
 /* SIDEBAR */
 
@@ -2549,7 +2555,7 @@
 		overflow: hidden;
 		padding: 2em 0 2em 0;
 		margin-bottom: 0;
-		background: #305649;
+		background-image: url(https://78.media.tumblr.com/226013296f378117bb506192f8982808/tumblr_inline_mkjkwp5xlN1qz4rgp.png);
 	}
 
 		.carousel .forward, .carousel .backward {
