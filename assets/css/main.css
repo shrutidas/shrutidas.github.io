@@ -4,6 +4,7 @@
 	@import url("font-awesome.min.css");
 	@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Pathway+Gothic+One');
 	@import url('https://fonts.googleapis.com/css?family=Assistant:300,400');
+	@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i');
 
 	@font-face { src: url("../fonts/EarthQuest.ttf"); font-family: EarthQuest; }
 	@font-face { src: url("../fonts/CaviarDreams.ttf"); font-family: caviar; }
@@ -1635,7 +1636,7 @@
 	}
 
 	h6 {
-		font-family: 'Assistant', sans-serif;
+		font-family: 'Roboto', sans-serif;
 		color: #fff;
 		font-weight: 300;
 		font-size:20px;
