@@ -462,7 +462,7 @@
 	}
 
 	.\-6u {
-		margin-left: 50%;
+		margin-left: 40%;
 	}
 
 	.\-5u {
@@ -1615,8 +1615,9 @@
 	}
 
 	h3 {
-		font-family: cafe;
-		color: #483949;
+		font-family: lane;
+		font-weight: 600;
+		color: #000;
 		line-height: 1.25em;
 		display: inline-block;
 
@@ -1625,10 +1626,10 @@
 	h4 {
 		font-family: caviar;
 		letter-spacing: 1px;
-		font-weight: 900;
-		font-style: bold;
+		font-weight: 300;
 		color: #000;
-		line-height: 1.25em;
+		text-align: left;
+		line-height: 1.45em;
 	}
 
 	h6 {
@@ -1646,7 +1647,7 @@
 		border-bottom-color: transparent;
 	}
 
-	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+	h1 strong, h2 strong, h4 strong, h5 strong, h6 strong {
 		font-weight: 1000;
 	}
 
@@ -1686,7 +1687,7 @@
 			border-bottom-color: transparent;
 			color: #000;
 			/*text-shadow: #956bcc 0 0 5px;*/
-			border-bottom: solid 1px rgba(192, 192, 192, 0.35);
+			border-bottom: solid 1px #948d8d;
 			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom  0.35s ease-in-out;
 			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
 			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
@@ -1727,8 +1728,8 @@
 		position: relative;
 		display: block;
 		border: 0;
-		top: 1.5em;
-		margin-bottom: 4.5em;
+		top: 1.0em;
+		margin-bottom: 2.5em;
 		height: 6px;
 		border-top: solid 1px rgba(128, 128, 128, 0.2);
 		border-bottom: solid 1px rgba(128, 128, 128, 0.2);
@@ -2154,13 +2155,18 @@
 	.wrapper {
 		background: #305649;;
 		margin: 0 0 0em 0;
-		padding: 2em 0 3em 0;
+		padding: 0em 0 3em 0;
 		color: #fff;
+	}
+
+	.wrapper header {
+		padding: 4em 0 1em 0;
 	}
 
 		.wrapper.style2 {
 			padding-top: 0;
 			background: #fff;
+			color: #000;
 		}
 
 /* HEADER */
@@ -2252,11 +2258,12 @@
 
 		body.homepage #header:after {
 			content: '';
+			/*background:#2f8667;*/
 			background: #1C0920;
 			display: block;
 			position: absolute;
 			left: 0;
-			top: -10px;
+			top: 0px;
 			width: 100%;
 			height: 100%;
 			opacity: 0;
@@ -2291,6 +2298,9 @@
 		font-size: 25px;
 		font-weight: 100;
 		letter-spacing: 2px;
+	}
+	#nav > li:hover{
+		color:#000;
 	}
 
 		#nav > ul {
@@ -2409,16 +2419,35 @@
 /* ABOUT SECTION */
 
 	#about {
-		background: #fff;
+		background: #1e1f1f;
 		text-align: center;
 		display: inline-center;
-		padding: 3em 0 4em 0;
+		padding: 3.5em 0 3em 0;
 		margin-bottom: 0;
 		color: #000;
 	}
 
 		#about header > p {
 			margin-bottom: 0;
+			color: #000;
+		}
+
+  /* EDUCATION SECTION */
+
+	#education {
+		background-image: url(https://78.media.tumblr.com/226013296f378117bb506192f8982808/tumblr_inline_mkjkwp5xlN1qz4rgp.png);
+		text-align: center;
+		display: inline-center;
+		padding: 3.8em 0 3em 0;
+		margin-bottom: 0;
+		color: #000;
+		line-height:0.8em;
+		letter-spacing: 1px;
+		font-weight: 500;
+	}
+
+		#education header > p {
+			margin-bottom: 6em;
 			color: #000;
 		}
 
@@ -2688,9 +2717,9 @@
 					padding-right: 2em;
 				}
 
-		/* ABOUT */
+		/* EDUCATION */
 
-			#about {
+			#education {
 				padding-left: 2em;
 				padding-right: 2em;
 			}
@@ -3092,6 +3121,12 @@
 		/* ABOUT */
 
 			#about {
+				padding: 2em 2em 3em 2em;
+			}
+
+		/* EDUCATION */
+
+			#education {
 				padding: 3em 2em 3em 2em;
 			}
 
