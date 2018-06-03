@@ -1565,12 +1565,14 @@
 /* BASIC */
 
 	body {
-		background: #f0f4f4;
+		background-image: url(https://78.media.tumblr.com/226013296f378117bb506192f8982808/tumblr_inline_mkjkwp5xlN1qz4rgp.png);
 		color: #5b5b5b;
+		/*
 		font-size: 15pt;
 		line-height: 1.85em;
 		font-family: lane;
 		font-weight: 300;
+		*/
 	}
 
 		body.is-loading *, body.is-loading *:after, body.is-loading *:before {
@@ -1635,12 +1637,12 @@
 	}
 
 	h6 {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Assistant', sans-serif;;
 		color: #fff;
-		font-weight: 300;
+		font-weight: 100;
 		letter-spacing: 1px;
 		line-height: 1.5em;
-		padding: 0em 10em 0em 10em;
+		padding: 0em 10em 0.8em 10em;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1668,7 +1670,7 @@
 
 	strong, b {
 		font-weight: 400;
-		color: #483949;
+		color: #ad97af;
 	}
 
 	em, i {
@@ -1686,11 +1688,10 @@
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
-			color: #000;
+			color: #ad97af;
 			/*text-shadow: #956bcc 0 0 5px;*/
-			border-bottom: solid 1px #948d8d;
-			padding: 0px 0px 3px 0px;
+			border-bottom: solid 1px #ad97af;
+			padding: 0px 0px 1.5px 0px;
 			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom  0.35s ease-in-out;
 			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
 			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
@@ -1932,7 +1933,7 @@
 					filter: blur(0.5px);
 					*/
 
-					border-bottom: solid 1px #fff;
+					border-bottom: solid 1px #ad97af;
 				}
 
 	ol.default {
@@ -2171,7 +2172,7 @@
 	}
 
 	.wrapper header {
-		padding: 4em 0 1em 0;
+		padding: 1.5em 0em 0em 0;
 	}
 
 		.wrapper.style2 {
@@ -2311,7 +2312,7 @@
 		letter-spacing: 2px;
 	}
 	#nav a:hover{
-		color: #b3acac;
+		color: #ad97af;
 	}
 		#nav > ul {
 			line-height: 0px;
@@ -2431,9 +2432,8 @@
 	#about {
 		background: #000;
 		opacity: 0.95;
-		text-align: center;
-		display: inline-center;
-		padding: 3.5em 0 3em 0;
+		text-align:center;
+		padding: 4em 0 4em 0;
 		margin-bottom: 0;
 		color: #fff;
 	}
@@ -2456,9 +2456,17 @@
 		font-weight: 500;
 	}
 
-		#education header > p {
+		#education header {
+			margin-bottom: 0em;
+			color: #000;
+			text-align: center;
+		}
+
+		#education table {
 			margin-bottom: 6em;
 			color: #000;
+			text-align: center;
+			display: inline-flex;
 		}
 
 /* CONTENT */
@@ -2558,7 +2566,7 @@
 	.carousel {
 		position: relative;
 		overflow: hidden;
-		padding: 3em 0 2em 0;
+		padding: 0em 0 2em 0;
 		background-image: url(https://78.media.tumblr.com/226013296f378117bb506192f8982808/tumblr_inline_mkjkwp5xlN1qz4rgp.png);
 	}
 
@@ -2635,11 +2643,11 @@
 			white-space: nowrap;
 			position: relative;
 			-webkit-overflow-scrolling: touch;
-			padding: 0 0.1em 0 0.5em;
+			padding: 0 0.5em 0 0.5em;
 		}
 
 		.carousel header {
-			padding: 3em 0 2em 0;
+			padding: 2em 0em 2em 0;
 		}
 
 		.carousel article {
@@ -3091,11 +3099,24 @@
 				transform: translateY(0);
 			}
 
-		/* WRAPPER */
+		/* TRAVEL */
 
 			.wrapper {
-				padding: 1em 1em 1em 1em;
+				padding: 2em 1em 1em 1em;
+				display: inline-flex;
 			}
+
+
+			.wrapper header {
+				padding: 1em 0em 0em 1em;
+				display: inline; 
+			}
+
+				.wrapper.style2 {
+					padding-top: 0;
+					color: #000;
+				}
+
 
 		/* HEADER */
 
@@ -3146,7 +3167,7 @@
 		/* ABOUT */
 
 			#about {
-				padding: 0em 1em 0em 1em;
+				padding: 3em 1em 3em 2em;
 				text-align: center;
 			}
 
