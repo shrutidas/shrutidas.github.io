@@ -2824,13 +2824,13 @@
 			}
 
 			h6 {
-				padding: 0em 1em 0em 1em;
+				padding: 0em 1em 0.5em 1em;
 			}
 
 
 			hr {
-				top: 3em;
-				margin-bottom: 6em;
+				top: 1em;
+				margin-bottom: 3em;
 			}
 
 		/* SECTION OR ARTICLES */
@@ -3101,20 +3101,24 @@
 		/* TRAVEL */
 
 			.wrapper {
-				padding: 2em 1em 1em 1em;
-				display: inline-flex;
+				padding: 2em 1em 2em 1em;
 			}
 
 
 			.wrapper header {
-				padding: 1em 0em 0em 1em;
-				display: inline; 
+				padding: 1em 0em 1em 0em;
 			}
 
 				.wrapper.style2 {
 					padding-top: 0;
 					color: #000;
 				}
+
+			.wrapper img {
+				display: inline-block;
+				height: 30%;
+				width: 20%;
+			}
 
 
 		/* HEADER */
@@ -3166,7 +3170,7 @@
 		/* ABOUT */
 
 			#about {
-				padding: 3em 1em 3em 2em;
+				padding: 3em 0em 3em 0em;
 				text-align: center;
 			}
 
