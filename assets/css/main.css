@@ -1932,7 +1932,7 @@
 					-ms-filter: blur(0.5px);
 					filter: blur(0.5px);
 					*/
-
+					color:#ad97af;
 					border-bottom: solid 1px #ad97af;
 				}
 
@@ -2301,7 +2301,6 @@
 		left: 0;
 		width: 100%;
 		background: #000;
-		opacity: 0.9;
 		text-align: center;
 		padding: 0.4em 0 0.4em 0;
 		z-index: 1;
@@ -2547,7 +2546,7 @@
 
 		#footer .copyright {
 			text-align: center;
-			color: rgba(214, 202, 202, 0.75);
+			color: rgba(128, 128, 128, 0.75);
 			font-size: 15px;
 			cursor: default;
 			font-family: 'Assistant', sans-serif;
