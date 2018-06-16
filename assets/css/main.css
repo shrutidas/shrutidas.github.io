@@ -2597,6 +2597,12 @@
 			margin-bottom: 6em;
 		}
 
+
+	.my_class_name {
+		border: 4px double #f1efef;
+		border-radius: 2%;
+	}
+
 /* SIDEBAR */
 
 	#sidebar > hr {
@@ -3232,10 +3238,13 @@
 				padding: 2em 1em 2em 1em;
 			}
 
+				.wrapper.row {
+					display: block;
+				}
 
-			.wrapper header {
-				padding: 1em 0em 1em 0em;
-			}
+				.wrapper header {
+					padding: 1em 0em 1em 0em;
+				}
 
 				.wrapper.style2 {
 					padding-top: 0;
