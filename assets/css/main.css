@@ -3265,6 +3265,47 @@
 				padding: 2.5em 0 0 0;
 			}
 
+
+/* MOVING HEADER */
+			.parallax-base div {
+			  opacity: .7;
+			}
+
+			.parallax-container {
+			  position: absolute; 
+			  top: 50%;
+			  left: 50%;
+			  margin-left: -250px;
+			  margin-top: -150px;
+			  -webkit-perspective: 1000;
+			  -moz-perspective: 1000px;
+			  transform-style: preserve-3d;
+			  overflow: hidden;
+			}
+
+
+			.parallax-base {
+			  -webkit-transform-style: preserve-3d;
+			  transform-style: preserve-3d;
+			  width: 500px;
+			  height: 300px;
+			  margin: 30px;
+			}
+
+			.layer-1 {
+			  position: absolute;
+			  -webkit-transform: translateZ(0px);
+			  -moz-transform: translateZ(0px);
+			}
+
+			.layer-2 {
+			  position: absolute;
+			  -webkit-transform: translateZ(40px);
+			  -moz-transform: translateZ(40px);
+			}
+
+
+
 				#header .inner {
 					padding-top: 1.5em;
 					padding-left: 1em;
