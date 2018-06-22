@@ -2779,7 +2779,6 @@
 				width: 5.3em;
 				height: 5.3em;
 				border-radius: 100%;
-				background-color: rgba(72, 57, 73, 0.35);
 				position: absolute;
 				top: -90%;
 				margin-top: 0em;
@@ -2793,16 +2792,20 @@
 
 			.carousel .forward:after, .carousel .backward:after {
 				content: '';
-				width: 1.8em;
-				height: 1.8em;
+				width: 2em;
+				height: 2em;
 				position: absolute;
 				top: -76%;
 				margin: 0em 0em 0 0;
-				background: url("images/arrow.svg") no-repeat center center;
+				font-family: FontAwesome;
+				font-size: 2em;
+				color: #483949;
+				content: '\f050';
+				/*background: url("images/arrow.svg") no-repeat center center;*/
 			}
 
 			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: #ad97af;
+				
 			}
 
 		.carousel .forward {
@@ -3156,7 +3159,6 @@
 				height: 44px;
 				left: 0;
 				position: fixed;
-				/*background: url(https://images.ecosia.org/TIg1Ey6xZPQ2CKO93tv3axwMFQw=/0x390/smart/https%3A%2F%2Fmaxcdn.icons8.com%2FShare%2Ficon%2FArrows%2Fexpand_arrow1600.png);*/
 				top: 0;
 				width: 100%;
 				z-index: 10001;
@@ -3179,6 +3181,8 @@
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
 						content: '\f0c9';
+						font-family: FontAwesome;
+						align-content: center;
 						color: #fff;
 						color: rgba(255, 255, 255, 0.75);
 						text-align: center;
