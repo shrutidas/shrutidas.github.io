@@ -2473,15 +2473,17 @@
 		left: 0;
 		width: 100%;
 		background: #000;
+		opacity: 0.95;
 		text-align: center;
 		padding: 0.4em 0 0.4em 0;
 		z-index: 1;
 		overflow: hidden;
-		font-family: bebas;
+		font-family: FontAwesome;
 		font-size: 25px;
 		font-weight: 100;
 		letter-spacing: 2px;
 	}
+
 	#nav a:hover{
 		color: #ad97af;
 	}
@@ -2521,7 +2523,7 @@
 
 			#nav > ul > li {
 				display: inline-block;
-				margin: -9px 0.5em 0 0.5em;
+				margin: -9px 1.5em 0 1.5em;
 				border-radius: 0.5em;
 				padding: 0.85em;
 				border: solid 1px transparent;
@@ -2531,8 +2533,9 @@
 				transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 			}
 
+
 				#nav > ul > li.active {
-					border-color: rgba(192, 192, 192, 0.35);
+					color: #000;
 				}
 
 				#nav > ul > li > a, #nav > ul > li > span {
@@ -2798,9 +2801,9 @@
 				top: -76%;
 				margin: 0em 0em 0 0;
 				font-family: FontAwesome;
-				font-size: 2em;
+				font-size: 3em;
 				color: #483949;
-				content: '\f050';
+				content: '\f101';
 				/*background: url("images/arrow.svg") no-repeat center center;*/
 			}
 
@@ -3180,7 +3183,6 @@
 						font-weight: normal;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
-						content: '\f0c9';
 						font-family: FontAwesome;
 						align-content: center;
 						color: #fff;
@@ -3240,7 +3242,7 @@
 				#navPanel .link {
 					position: relative;
 					text-align: center;
-					font-family: bebas;
+					font-family: FontAwesome;
 					font-weight: 300px;
 					letter-spacing: 2px;
 					z-index: 1;
@@ -3254,6 +3256,8 @@
 
 					#navPanel .link:first-child {
 						border-top: 0;
+						content: 'ABOUT';
+						
 					}
 
 					#navPanel .link.depth-0 {
