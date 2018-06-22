@@ -2877,6 +2877,19 @@
 				margin-bottom: 1em;
 			}
 
+			.carousel article video {
+				top: 0;
+				height: 260px;
+				width: 320px;
+				margin-right: -1em;
+				margin-bottom: 1em;
+			}
+
+			.carousel article tools {
+				font-family: FontAwesome;
+			}
+
+
 			.carousel article p {
 				text-align: center;
 				left: -1em;
