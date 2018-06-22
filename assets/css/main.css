@@ -1798,7 +1798,7 @@
 		a:hover {
 			color: #ad97af;
 			/*text-shadow: #956bcc 0 0 5px;*/
-			border-bottom: solid 1px #ad97af;
+			border-bottom: solid 0px #ad97af;
 			padding: 0px 0px 1.5px 0px;
 			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom  0.35s ease-in-out;
 			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom 0.35s ease-in-out;
@@ -2290,6 +2290,69 @@
 			color: #000;
 		}
 
+/* LINK HOVER */
+
+
+	.cl-effect-1 a::before,
+	.cl-effect-1 a::after {
+		display: inline-block;
+		opacity: 0;
+		-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+		-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+		transition: transform 0.3s, opacity 0.2s;
+	}
+
+	.cl-effect-1 a::before {
+		margin-right: 10px;
+		content: '[';
+		font-size: 50px;
+		-webkit-transform: translateX(20px);
+		-moz-transform: translateX(20px);
+		transform: translateX(20px);
+	}
+
+	.cl-effect-1 a::after {
+		margin-left: 10px;
+		content: ']';
+		font-size: 50px;x;
+		-webkit-transform: translateX(-20px);
+		-moz-transform: translateX(-20px);
+		transform: translateX(-20px);
+	}
+
+	.cl-effect-1 a:hover::before,
+	.cl-effect-1 a:hover::after,
+	.cl-effect-1 a:focus::before,
+	.cl-effect-1 a:focus::after {
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+
+	.cl-effect-15 a {
+	color: rgba(0,0,0,0.2);
+	font-weight: 700;
+	text-shadow: none;
+	}
+
+	.cl-effect-15 a::before {
+		color: #000;
+		content: attr(data-hover);
+		position: absolute;
+		-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+		-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+		transition: transform 0.3s, opacity 0.3s;
+	}
+
+	.cl-effect-15 a:hover::before,
+	.cl-effect-15 a:focus::before {
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		transform: scale(0.9);
+		opacity: 0;
+	}
+
 /* HEADER */
 
 	#header {
@@ -2574,12 +2637,24 @@
 			text-align: center;
 		}
 
+		#education img:hover {
+			-webkit-filter: drop-shadow(0px 0px 0.7px #000);
+			-webkit-transition: all .5s ease-in-out;
+		}
+
 		#education table {
 			margin-bottom: 6em;
 			color: #000;
 			text-align: center;
 			display: inline-flex;
 		}
+
+
+	/*EXPERIENCE SECTION */
+	#experience img:hover {
+			-webkit-filter: drop-shadow(0px 0px 2px #fff);
+			-webkit-transition: all .5s ease-in-out;
+	}
 
 /* CONTENT */
 
@@ -2704,7 +2779,7 @@
 				width: 5.3em;
 				height: 5.3em;
 				border-radius: 100%;
-				background-color: rgba(72, 57, 73, 0.5);
+				background-color: rgba(72, 57, 73, 0.35);
 				position: absolute;
 				top: -90%;
 				margin-top: 0em;
@@ -2727,7 +2802,7 @@
 			}
 
 			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: rgba(80, 16, 82, 0.75);
+				background-color: #ad97af;
 			}
 
 		.carousel .forward {
