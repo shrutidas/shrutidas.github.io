@@ -21,11 +21,15 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
+            margin: 0;
+            padding: 48px 64px;
             line-height: 1.6;
             color: #333;
+        }
+
+        .site {
+            max-width: 960px;
+            margin: 0 auto;
         }
 
         h1 {
@@ -37,13 +41,17 @@
         }
 
         h2 {
-          font-family: 'Apercu', sans-serif;
-          color: #222;
+            font-family: 'Apercu', sans-serif;
+            color: #222;
+            margin: 0;
+            font-size: 1em;
+            line-height: 1.6;
+            font-weight: bold;
         }
 
         .social-links {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 48px;
         }
 
         .social-links a {
@@ -52,8 +60,25 @@
             margin: 0 10px;
         }
 
-        .section {
-            margin-bottom: 30px;
+        .section-row {
+            display: grid;
+            grid-template-columns: minmax(100px, 18%) 1fr;
+            column-gap: 36px;
+            padding: 24px 0;
+            align-items: start;
+        }
+
+        .section-heading {
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        .section-body .entry:first-child {
+            margin-top: 0;
+        }
+
+        .section-body .entry:last-child {
+            margin-bottom: 0;
         }
 
         .year {
@@ -65,12 +90,14 @@
         .entry {
             margin: 15px 0;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
+            line-height: 1.6;
         }
 
         .emoji {
             width: 20px;
             margin-right: 10px;
+            flex-shrink: 0;
         }
 
         a {
@@ -82,106 +109,153 @@
         a:hover {
             text-decoration: underline;
         }
+
+        footer {
+            text-align: center;
+            margin-top: 70px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 32px 24px;
+            }
+
+            .section-row {
+                grid-template-columns: 1fr;
+                row-gap: 12px;
+                column-gap: 0;
+                padding: 24px 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>shruti das</h1>
+    <div class="site">
+        <h1>shruti das</h1>
 
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/shruti--das/">
-            <i class="fab fa-linkedin" style="font-size: 20px; color: #0077B5"></i>
-        </a>
-        <a href="https://medium.com/@shrutidas_">
-            <i class="fab fa-medium" style="font-size: 20px; color: #000"></i>
-        </a>
-        <a href="https://www.goodreads.com/user/show/92586447-shruti">
-            <i class="fab fa-goodreads" style="font-size: 20px; color: #75420e"></i>
-        </a>
-        <a href="https://curius.app/shruti-das">
-            <img src="https://curius.app/dist/favicon.ico" width="18">
-        </a>
-        <a href="https://scholar.google.com/citations?user=afxZ388AAAAJ&hl=en&oi=sra">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" width="18">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/shruti--das/">
+                <i class="fab fa-linkedin" style="font-size: 20px; color: #0077B5"></i>
+            </a>
+            <a href="https://medium.com/@shrutidas_">
+                <i class="fab fa-medium" style="font-size: 20px; color: #000"></i>
+            </a>
+            <a href="https://www.goodreads.com/user/show/92586447-shruti">
+                <i class="fab fa-goodreads" style="font-size: 20px; color: #75420e"></i>
+            </a>
+            <a href="https://curius.app/shruti-das">
+                <img src="https://curius.app/dist/favicon.ico" width="18">
+            </a>
+            <a href="https://scholar.google.com/citations?user=afxZ388AAAAJ&hl=en&oi=sra">
+                <img src="https://images.icon-icons.com/2108/PNG/512/google_scholar_icon_130918.png" width="18">
+            </a>
+        </div>
 
-        </a>
+        <main class="sections">
+
+            <section class="section-row">
+                <div class="section-heading">
+                    <h2>currently</h2>
+                </div>
+                <div class="section-body">
+                    <div class="entry">
+                        <span class="emoji">🕊️</span>
+                        <div>building tools for digital afterlife
+                          @<a href="https://www.withperpetua.com" target="new">Perpetua</a>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">🌐</span>
+                        <div>figuring out how democracies survive the internet 
+                          @<a href="https://worldprojects.columbia.edu/our-work/research-and-engagement/democratic-renewal" target="new">ColumbiaWorldProjects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-row">
+                <div class="section-heading">
+                    <h2>previously</h2>
+                </div>
+                <div class="section-body">
+                    <div class="entry">
+                        <span class="emoji">💡</span>
+                        <div>worked toward an open and free internet
+                          @<a href="https://cdt.org" target="new">CenterForDemocracyTechnology</a>, @<a href="https://publicpolicy.google" target="new">Google</a>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">🌱</span>
+                        <div>helped grow AI search for campus use cases
+                          @<a href="https://www.perplexity.ai" target="new">Perplexity</a>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">👁️</span>
+                        <div>studied the spread of surveillance technology
+                          @<a href="https://www.stopspying.org" target="new">StopSpying.org</a>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">🍎</span>
+                        <div>designed and built a lot of software
+                          @<a href="https://www.apple.com">Apple</a>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">📈</span>
+                        <div>scaled in-market testing for alternative 🥩 and 🧀 products
+                          @<a href="https://www.palateinsights.com">Palate</a>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">💸</span>
+                        <div>invested in early-stage startups
+                          @<a href="https://www.contrarycap.com">ContraryCapital</a>,
+                          @<a href="https://startupshell.org">StartupShell</a>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">🛠️</span>
+                        <div>directed the world's largest hackathon for underrepresented genders
+                          @<a href="https://2019.gotechnica.org">Technica</a>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">🔓</span>
+                        <div>broke (and fixed) electronic voting systems
+                          @<a href="https://www.umiacs.umd.edu">UMIACS</a>,
+                          @<a href="https://ieeeusa.org/">IEEE-USA</a>,
+                          @<a href="https://www.potomacinstitute.org">PotomacInstitute</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-row">
+                <div class="section-heading">
+                    <h2>education</h2>
+                </div>
+                <div class="section-body">
+                    <div class="entry">
+                        <span class="emoji">🎓</span>
+                        <div>MPA in development practice & technology policy @<a href="https://www.columbia.edu" target="new">ColumbiaU</a></div>
+                    </div>
+                    <div class="entry">
+                        <span class="emoji">🎓</span>
+                        <div>BS in computer engineering
+                          @<a href="https://umd.edu">UofMaryland</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2026 Shruti Das
+        </footer>
     </div>
-
-    <div class="section">
-      <h2>projects coming soon..</h2>
-    </div>
-
-    <div class="section">
-        <h2>currently..</h2>
-        <div class="entry">
-            <span class="emoji">🎓</span>
-            <div>studying public administration, technology policy, and international development @<a href="https://www.columbia.edu" target="new">ColumbiaU</a></div>
-        </div>
-        <div class="entry">
-            <span class="emoji">🌐</span>
-            <div>digital governance research for democratic renewal
-              @<a href="https://worldprojects.columbia.edu/our-work/research-and-engagement/democratic-renewal" target="new">ColumbiaWorldProjects</a>
-            </div>
-        </div>
-        <div class="entry">
-            <span class="emoji">🌱</span>
-            <div>strategy & growth
-              @<a href="https://www.perplexity.ai" target="new">Perplexity</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="section">
-        <h2>previously..</h2>
-        <div class="entry">
-            <span class="emoji">👁️</span>
-            <div>research and writing
-              @<a href="https://www.stopspying.org" target="new">StopSpying.org</a>
-            </div>
-        </div>
-        <div class="entry">
-            <span class="emoji">🍎</span>
-            <div>designed and built software
-              @<a href="https://www.apple.com">Apple</a>
-            </div>
-        </div>
-        <div class="entry">
-            <span class="emoji">📈</span>
-            <div>scaled in-market testing for alternative 🥩 and 🧀 products
-              @<a href="https://www.palateinsights.com">Palate</a>
-            </div>
-        </div>
-        <div class="entry">
-            <span class="emoji">💸</span>
-            <div>invested in early-stage startups
-              @<a href="https://www.contrarycap.com">ContraryCapital</a>,
-              @<a href="https://startupshell.org">StartupShell</a>
-            </div>
-        </div>
-        <div class="entry">
-            <span class="emoji">🛠️</span>
-            <div>directed the world's largest hackathon for underrepresented genders
-              @<a href="https://2019.gotechnica.org">Technica</a>
-            </div>
-        </div>
-        <div class="entry">
-            <span class="emoji">🔓</span>
-            <div>researched e2e security, encryption, & electronic voting
-              @<a href="https://www.umiacs.umd.edu">UMIACS</a>,
-              @<a href="https://ieeeusa.org/">IEEE-USA</a>,
-              @<a href="https://www.potomacinstitute.org">PotomacInstitute</a>
-            </div>
-        </div>
-        <div class="entry">
-            <span class="emoji">🐢</span>
-            <div>studied computer engineering
-              @<a href="https://umd.edu">UofMaryland</a>
-            </div>
-        </div>
-    </div>
-
-    <footer style="text-align: center; margin-top: 70px; font-size: 0.9em; color: #666;">
-     &copy; 2025 Shruti Das
-   </footer>
 </body>
 </html>
